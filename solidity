@@ -92,12 +92,12 @@ contract accesscontrol{
     }
   
 
-    function requestAuthentication(address device, address fog) public {
+    function requestAuthentication(address user,address device, address fog) public onlyAdmin{
             
-            emit Authenticated(msg.sender,device,fog);
-            bytes32 UID= keccak256(device,fog,msg.sender,block.timestamp);
-            Tokens.push(Token(UID,msg.sender,device,fog));
-            emit TokenCreated(UID,msg.sender,device,fog);
+            emit Authenticated(user,device,fog);
+            bytes32 UID= keccak256(device,fog,user,block.timestamp);
+            Tokens.push(Token(UID,user,device,fog));
+            emit TokenCreated(UID,user,device,fog);
             
            
         
