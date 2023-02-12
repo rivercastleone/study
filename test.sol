@@ -99,7 +99,7 @@ contract accesscontrol{
             Tokens.push(Token(UID,user,device,fog));
             emit TokenCreated(UID,user,device,fog);
             
-           
+            
         
     }
 }
