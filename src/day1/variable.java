@@ -1,6 +1,5 @@
 package day1;
 
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane.SystemMenuBar;
 
 public class variable{
     public static void main(String[] args){
