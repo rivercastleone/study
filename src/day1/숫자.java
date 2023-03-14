@@ -1,6 +1,7 @@
 package day1;
 
 public class 숫자{
+
     public static void main(String[] args){
         System.out.println(1+2); // 3
 
@@ -10,4 +11,5 @@ public class 숫자{
 
         System.out.println(6/2); //3 
     }
+    
 }
